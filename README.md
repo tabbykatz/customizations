@@ -1,2 +1,2 @@
 # dotfiles
-home for my .bashrc and .vimrc
+# home sweet home for my .bashrc and .vimrc

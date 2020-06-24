@@ -60,3 +60,4 @@ highlight Identifier cterm=italic
 highlight Conditional cterm=italic
 highlight Type cterm=italic
 highlight markdownItalic cterm=italic
+

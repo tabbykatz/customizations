@@ -13,7 +13,6 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'kana/vim-smartinput'
-"Plugin 'valloric/youcompleteme'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'nvie/vim-flake8'
 Plugin 'rodjek/vim-puppet'
@@ -60,4 +59,13 @@ highlight Identifier cterm=italic
 highlight Conditional cterm=italic
 highlight Type cterm=italic
 highlight markdownItalic cterm=italic
-
+augroup FileTypeSpecificAutocommands
+	autocmd FileType python setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+	autocmd FileType c setlocal tabstop=4 shiftwidth=4 noexpandtab
+	autocmd FileType javascript setlocal tabstop=2 expandtab noeol
+augroup END
+" grey color column
+:set cc=+1  " highlight column after 'textwidth'              
+                :hi ColorColumn ctermbg=lightgrey guibg=lightgrey 
+" no error bells! 
+set belloff=all
